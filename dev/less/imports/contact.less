@@ -1,0 +1,66 @@
+.contact{
+	padding: 0 2%;
+}
+.email{
+	height: 95px;
+	input{
+		box-sizing: border-box;
+		width: 84.56%;
+		.inline-block;
+		border: none;
+		font-size: 1.875rem;
+		color: #9f9f9f;
+		background: #ededed;
+		font-style: italic;
+		padding: 30px; 
+	}
+	button{
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+		border-bottom: 8px solid #dd6b44;
+		.inline-block;
+		width: 15.44%;
+		height: 95px;
+		padding: 25px 28px;	
+		background: #fd926d;
+	}
+}
+
+.social{
+	span{
+		font-size: 1.625rem;
+		color: #6c6c6c;
+	}
+	text-align: center;
+	margin: 25px 0;
+	.inline-block;
+	vertical-align: middle;
+	height: 89px;
+	// padding: 0 35px 0 ;
+	box-sizing: border-box;
+	@media screen and (min-width:@width-tablet){
+		.text-right;
+		div{
+			.inline-block;
+		}
+	}
+	
+	&-icon{
+		.inline-block;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		height: 89px;
+		width: 89px;
+		background: #ededed;
+		&:nth-child(odd){
+			background-color: #f7f7f7;
+		}
+	}
+}
+.icon-social{
+	.inline-block;
+	vertical-align: middle;
+	margin-left: 35px;
+}
