@@ -1,18 +1,44 @@
 .contact{
 	padding: 0 2%;
-}
+	@media screen and (min-width:@width-tablet) {
+		background: #ededed;
+		height: 55px;
+		margin-top: 20px;
+	}
+} 
 .email{
+	&-stay{
+		display: none;
+		@media screen and (min-width:@width-tablet) {
+			.inline-block;
+			color: #6b6b6b;
+			font-size: 0.75rem;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
 	height: 95px;
+	@media screen and (min-width:@width-tablet) {
+			height: 55px;
+			vertical-align: middle;
+		}
 	input{
 		box-sizing: border-box;
-		width: 84.56%;
+		width: 514px;
+		height: 95px;
 		.inline-block;
 		border: none;
 		font-size: 1.875rem;
 		color: #9f9f9f;
 		background: #ededed;
 		font-style: italic;
-		padding: 30px; 
+		text-align: center;
+		@media screen and(min-width:@width-tablet){
+			background: white;
+			font-size: 0.75rem;
+			width: 132px;
+			height: 28px;
+		}
 	}
 	button{
 		border-top: 0;
@@ -20,32 +46,41 @@
 		border-left: 0;
 		border-bottom: 8px solid #dd6b44;
 		.inline-block;
-		width: 15.44%;
+		width: 95px;
 		height: 95px;
-		padding: 25px 28px;	
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;	
 		background: #fd926d;
+		@media screen and (min-width:@width-tablet){
+			width: 28px;
+			height: 28px;
+			border-bottom: 3px solid  #dd6b44;
+		}
 	}
 }
-
 .social{
 	span{
 		font-size: 1.625rem;
 		color: #6c6c6c;
+		@media screen and (min-width:@width-tablet) {
+			font-size: 0.75rem;
+		}
 	}
 	text-align: center;
 	margin: 25px 0;
 	.inline-block;
 	vertical-align: middle;
 	height: 89px;
-	// padding: 0 35px 0 ;
 	box-sizing: border-box;
 	@media screen and (min-width:@width-tablet){
 		.text-right;
+		height: 55px;
+		margin: 0;
 		div{
 			.inline-block;
 		}
 	}
-	
 	&-icon{
 		.inline-block;
 		display: table-cell;
@@ -54,6 +89,10 @@
 		height: 89px;
 		width: 89px;
 		background: #ededed;
+		@media screen and (min-width:@width-tablet) {
+				width: 55px;
+				height: 55px;
+			}
 		&:nth-child(odd){
 			background-color: #f7f7f7;
 		}
